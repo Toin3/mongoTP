@@ -11,7 +11,7 @@ get '/' => sub {
 post '/dblist' => sub {
     my $self = shift;
 	my @dbs = MongoXplorer->get_databases($self->param('instance_name'), $self->param('instance_port'));
-	return $self->render('dblist', dbs => [@dbs], title => 'Liste des bases de données');
+	return $self->render('dblist', dbs => [@dbs], title => 'Liste des bases de donnÃ©es');
 };
 
 get '/databasename/:collectionname' => sub {
