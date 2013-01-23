@@ -1,0 +1,7 @@
+% layout 'default';
+<h1>Liste des bases</h1>
+<ul>
+	% foreach my $database (@$dbs) {
+		<li><a href="/dabatase/<%= $database %>"><%= $database %></a></li>
+	% }
+</ul>

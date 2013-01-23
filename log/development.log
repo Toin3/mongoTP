@@ -1,0 +1,76 @@
+[Wed Jan 23 11:04:47 2013] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jan 23 11:04:47 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:04:47 2013] [debug] Routing to a callback.
+[Wed Jan 23 11:04:47 2013] [debug] Rendering template "index.html.ep".
+[Wed Jan 23 11:04:47 2013] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jan 23 11:04:47 2013] [debug] 200 OK (0.010360s, 96.525/s).
+[Wed Jan 23 11:04:47 2013] [debug] GET /style.css (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:04:47 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jan 23 11:04:47 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jan 23 11:04:47 2013] [debug] Rendering inline template.
+[Wed Jan 23 11:04:47 2013] [debug] Rendering inline template.
+[Wed Jan 23 11:04:47 2013] [debug] 404 Not Found (0.019440s, 51.440/s).
+[Wed Jan 23 11:05:00 2013] [debug] POST /connect (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:05:00 2013] [debug] Routing to a callback.
+[Wed Jan 23 11:05:00 2013] [debug] Rendering template "dblist.html.ep".
+[Wed Jan 23 11:05:00 2013] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jan 23 11:05:00 2013] [debug] 200 OK (0.020063s, 49.843/s).
+[Wed Jan 23 11:05:00 2013] [debug] GET /style.css (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:05:00 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jan 23 11:05:00 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jan 23 11:05:00 2013] [debug] Rendering cached inline template.
+[Wed Jan 23 11:05:00 2013] [debug] Rendering cached inline template.
+[Wed Jan 23 11:05:00 2013] [debug] 404 Not Found (0.006362s, 157.183/s).
+[Wed Jan 23 11:06:03 2013] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jan 23 11:06:03 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:03 2013] [debug] Routing to a callback.
+[Wed Jan 23 11:06:03 2013] [debug] Rendering template "index.html.ep".
+[Wed Jan 23 11:06:03 2013] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jan 23 11:06:03 2013] [debug] 200 OK (0.009825s, 101.781/s).
+[Wed Jan 23 11:06:03 2013] [debug] GET /style.css (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:03 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jan 23 11:06:03 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jan 23 11:06:03 2013] [debug] Rendering inline template.
+[Wed Jan 23 11:06:03 2013] [debug] Rendering inline template.
+[Wed Jan 23 11:06:03 2013] [debug] 404 Not Found (0.018881s, 52.963/s).
+[Wed Jan 23 11:06:04 2013] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jan 23 11:06:04 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:04 2013] [debug] Routing to a callback.
+[Wed Jan 23 11:06:04 2013] [debug] Rendering template "dblist.html.ep".
+[Wed Jan 23 11:06:04 2013] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jan 23 11:06:04 2013] [debug] 200 OK (0.021781s, 45.912/s).
+[Wed Jan 23 11:06:04 2013] [debug] GET /style.css (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:04 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jan 23 11:06:04 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jan 23 11:06:04 2013] [debug] Rendering inline template.
+[Wed Jan 23 11:06:04 2013] [debug] Rendering inline template.
+[Wed Jan 23 11:06:04 2013] [debug] 404 Not Found (0.019259s, 51.924/s).
+[Wed Jan 23 11:06:50 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:50 2013] [debug] Routing to a callback.
+[Wed Jan 23 11:06:50 2013] [debug] Rendering template "index.html.ep".
+[Wed Jan 23 11:06:50 2013] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jan 23 11:06:50 2013] [debug] 200 OK (0.007149s, 139.880/s).
+[Wed Jan 23 11:06:50 2013] [debug] GET /style.css (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:50 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jan 23 11:06:50 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jan 23 11:06:50 2013] [debug] Rendering cached inline template.
+[Wed Jan 23 11:06:50 2013] [debug] Rendering cached inline template.
+[Wed Jan 23 11:06:50 2013] [debug] 404 Not Found (0.006349s, 157.505/s).
+[Wed Jan 23 11:06:52 2013] [debug] Your secret passphrase needs to be changed!!!
+[Wed Jan 23 11:06:52 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:52 2013] [debug] Routing to a callback.
+[Wed Jan 23 11:06:52 2013] [debug] Rendering template "dblist.html.ep".
+[Wed Jan 23 11:06:52 2013] [debug] Rendering template "layouts/default.html.ep".
+[Wed Jan 23 11:06:52 2013] [debug] 200 OK (0.020498s, 48.785/s).
+[Wed Jan 23 11:06:52 2013] [debug] GET /style.css (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:52 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jan 23 11:06:52 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jan 23 11:06:52 2013] [debug] Rendering inline template.
+[Wed Jan 23 11:06:52 2013] [debug] Rendering inline template.
+[Wed Jan 23 11:06:52 2013] [debug] 404 Not Found (0.018373s, 54.428/s).
+[Wed Jan 23 11:06:56 2013] [debug] GET /dabatase/test_database (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Wed Jan 23 11:06:56 2013] [debug] Template "not_found.development.html.ep" not found.
+[Wed Jan 23 11:06:56 2013] [debug] Template "not_found.html.ep" not found.
+[Wed Jan 23 11:06:56 2013] [debug] Rendering cached inline template.
+[Wed Jan 23 11:06:56 2013] [debug] Rendering cached inline template.
+[Wed Jan 23 11:06:56 2013] [debug] 404 Not Found (0.009105s, 109.830/s).

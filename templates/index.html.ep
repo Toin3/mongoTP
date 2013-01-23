@@ -1,0 +1,12 @@
+% layout 'default';
+<div id="content">
+<%= form_for dblist => (method => 'post') => begin %>
+	<h1>Bienvenue sur Mongo(mery burns), explorateur de collections MongoDB</h1>
+    <p>Adresse IP de l'instance :
+    <%= text_field 'instance_name' %> 
+    Port de l'instance :  
+    <%= text_field 'instance_port' %> 
+    <%= submit_button 'Se connecter' %>
+    </p>
+<% end %>
+</div>
