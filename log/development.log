@@ -74,3 +74,4 @@
 [Wed Jan 23 11:06:56 2013] [debug] Rendering cached inline template.
 [Wed Jan 23 11:06:56 2013] [debug] Rendering cached inline template.
 [Wed Jan 23 11:06:56 2013] [debug] 404 Not Found (0.009105s, 109.830/s).
+[Wed Jan 23 11:50:07 2013] [info] Listening at "http://*:3000".
