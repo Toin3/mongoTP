@@ -1,7 +1,7 @@
 % layout 'default';
-<h1>Liste des collections de la base <%= dbname %></h1>
+<h1>Liste des collections de la base <%= $databasename %></h1>
 <ul>
-	% foreach my $collection (@$collections){
-		<li><a href="/collection/<%= $dbname %>/<%= collection %>><%= collection %></a></li>
+	% foreach my $collectionname (@$collections){
+		<li><a href="/collection/<%= $databasename %>/<%= $collectionname %>"><%= $collectionname %></a></li>
 	% }
 </ul>

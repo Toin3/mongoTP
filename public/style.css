@@ -1,0 +1,28 @@
+* {
+	margin:5;
+	padding:5;
+}
+
+#logo {
+	background-image:url('/logo.png');
+	width:350px;
+	height:200px;
+	margin:auto;
+}
+
+#call_smithers {
+	background-image:url('/smithers.png');
+	height:500px;
+	width:600px;
+}
+
+#form_smithers {
+	position:absolute;
+	margin-left:220px;
+	margin-top:90px;
+}
+
+#form_smithers input{
+	float:right;
+	margin-left:15px;
+}
