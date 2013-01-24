@@ -28,6 +28,7 @@ sub get_collections
 	my $mongo_connection = MongoDB::MongoClient->new(host => $g_instance_name.':'.$g_instance_port);
 	my $database = $mongo_connection->get_database($db_name);
         my @collections = $database->collection_names;
+	@collections = grep { index($_, '.$_id_') == -1 } @collections;
 	return @collections;
 }
 
