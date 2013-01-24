@@ -1,14 +1,17 @@
 % layout 'default';
 <script>
+var collstr = '<%= $collection_content %>';
 $(document).ready(function(){
-
-
+	console.log(collstr);
+	var collarr = eval(collstr);
+	console.log(collarr);
 });
 </script>
 
 <h1>Détails de la collection <%= $collectionname %></h1>
 
-		<%= $collection_content %>
+<div id="collection_content">
+</div>
 
 <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
 <input type="submit" id="execute_command" value="Executer la commande" >
