@@ -1,16 +1,16 @@
 % layout 'default';
 <script>
-var collstr = '<%= $collection_content %>';
-$(document).ready(function(){
-	console.log(collstr);
-	var collarr = eval(collstr);
-	console.log(collarr);
+$(document).ready(function()
+{
+ 	var collarr = eval(<%= $collection_content %>);
+ 	console.log(collarr);
 });
 </script>
 
 <h1>Détails de la collection <%= $collectionname %></h1>
 
 <div id="collection_content">
+	<%= $collection_content %>
 </div>
 
 <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />

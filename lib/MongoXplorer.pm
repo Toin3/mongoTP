@@ -40,21 +40,24 @@ sub get_collections
 	return @collections;
 }
 
+
 sub get_collection_data
 {
-	my $self = shift;
-	my ( $db_name, $collection_name ) = @_;
-	my $mongo_connection = MongoDB::MongoClient->new(host => $g_instance_name.':'.$g_instance_port);
+ 	my $self = shift;
+ 	my ( $db_name, $collection_name ) = @_;
+ 	my $mongo_connection = MongoDB::MongoClient->new(host => $g_instance_name.':'.$g_instance_port);
 	my $db = $mongo_connection->get_database( $db_name );
-	my $collection_content = $db->get_collection( $collection_name );
+ 	my $collection_content = $db->get_collection( $collection_name );
 	my $data = $collection_content->find();
-	
-	my @arr_data;
-	while (my $record = $data->next){
-		push(@arr_data, to_json($record,{allow_blessed=>1,convert_blessed=>1, utf8=>1}));
+
+ 	my @arr_data;
+ 	while (my $record = $data->next)
+	{
+  		push(@arr_data, to_json($record,{allow_blessed=>1,convert_blessed=>1, utf8=>1}));
 	}
-	my $formated_json = '['.join(',', @arr_data).']';
-	return $formated_json;
+
+ 	my $formated_json = '['.join(',', @arr_data).']';
+ 	return $formated_json;
 }
 
 1;
