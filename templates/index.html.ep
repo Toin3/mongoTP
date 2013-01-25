@@ -1,5 +1,6 @@
 % layout 'default';
 <div id="content">
+%= flash 'warning_message'
 <h1>Demandez à Smithers pour vous connecter</h1>
 <%= form_for dblist => (method => 'post') => begin %>
 	<div id="call_smithers">
@@ -7,10 +8,10 @@
 			<p>Adresse IP de l'instance :
 			<%= text_field 'instance_name' %> </p>
 			<p>Port de l'instance :  
-			<%= text_field 'instance_port' %> <br /></p>
+			<%= text_field 'instance_port' %> </p>
 		</div>
 	</div>
     <%= submit_button 'Smithers, apportez moi le dossier' %>
-    </p>
+	</p>
 <% end %>
 </div>

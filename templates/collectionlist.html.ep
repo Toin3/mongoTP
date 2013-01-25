@@ -1,7 +1,11 @@
 % layout 'default';
 <h1>Liste des collections de la base <%= $databasename %></h1>
+% if (join('', @$collections) eq "") {
+	<p>Aucune collections dans cette base de données</p>
+% } else {
 <ul>
 	% foreach my $collectionname (@$collections){
-		<li><a href="/collection/<%= $databasename %>/<%= $collectionname %>"><%= $collectionname %></a></li>
+		<li><a href="/collectiondetails/<%= $databasename %>/<%= $collectionname %>"><%= $collectionname %></a></li>
 	% }
 </ul>
+% }
