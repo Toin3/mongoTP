@@ -1,1 +1,15 @@
-﻿
+﻿[Mon Jan 28 12:39:23 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 12:39:23 2013] [debug] Routing to a callback.
+[Mon Jan 28 12:39:23 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 12:39:23 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 12:39:23 2013] [debug] 200 OK (0.004367s, 228.990/s).
+[Mon Jan 28 12:39:25 2013] [debug] GET /databasename/local (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 12:39:25 2013] [debug] Routing to a callback.
+[Mon Jan 28 12:39:25 2013] [debug] Rendering cached template collectionlist.html.ep.
+[Mon Jan 28 12:39:25 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 12:39:25 2013] [debug] 200 OK (0.004024s, 248.509/s).
+[Mon Jan 28 12:39:28 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 12:39:28 2013] [debug] Routing to a callback.
+[Mon Jan 28 12:39:28 2013] [debug] Rendering cached template collectionlist.html.ep.
+[Mon Jan 28 12:39:28 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 12:39:28 2013] [debug] 200 OK (0.002996s, 333.778/s).
