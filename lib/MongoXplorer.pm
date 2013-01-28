@@ -51,11 +51,10 @@ sub get_collection_data
 	
 	my @arr_data;
 	while (my $record = $data->next){
-		push(@arr_data, $record);
+		push(@arr_data, to_json($record,{allow_blessed=>1,convert_blessed=>1}));
 	}
-	print Dumper(@arr_data);
-	
-	return @arr_data;
+	my $formated_json = '['.join(',', @arr_data).']';
+	return $formated_json;
 }
 
 1;

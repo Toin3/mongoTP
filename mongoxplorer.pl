@@ -3,6 +3,10 @@ use lib 'lib';
 use Mojolicious::Lite;
 use MongoXplorer;
 use MongoDB;
+use Data::Dumper;
+use strict;
+use warnings;
+use JSON;
 
 get '/' => sub {
   my $self = shift;
@@ -32,8 +36,8 @@ get '/databasename/:collectionname' => sub {
 
 get '/collectiondetails/:databasename/:collectionname' => sub {
     my $self = shift;
-	my @data = MongoXplorer->get_collection_data($self->param('databasename'), $self->param('collectionname'));
-    $self->render('collectiondetails', title => 'Aperçu de la collection '.$self->param('collectionname'), collectionname => $self->param('collectionname'), collection_content => [@data]);
+	my $data = MongoXplorer->get_collection_data($self->param('databasename'), $self->param('collectionname'));
+    $self->render('collectiondetails', title => 'Aperçu de la collection '.$self->param('collectionname'), collectionname => $self->param('collectionname'), collection_content => $data);
 };
 
 

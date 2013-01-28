@@ -1,1 +1,751 @@
-﻿
+﻿[Mon Jan 28 10:47:32 2013] [info] Listening at "http://*:3000".
+[Mon Jan 28 10:48:31 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:48:31 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:48:31 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:48:31 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 10:48:31 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:48:31 2013] [debug] 200 OK (0.016441s, 60.824/s).
+[Mon Jan 28 10:48:36 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:48:36 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:48:36 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:48:36 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:48:36 2013] [debug] 200 OK (0.020911s, 47.822/s).
+[Mon Jan 28 10:48:39 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:48:39 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:48:39 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 10:48:39 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:48:39 2013] [debug] 200 OK (0.017825s, 56.101/s).
+[Mon Jan 28 10:48:40 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:48:40 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:48:40 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 10:48:40 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:48:40 2013] [debug] 200 OK (0.050278s, 19.889/s).
+[Mon Jan 28 10:53:31 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:53:31 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:53:31 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:53:31 2013] [error] couldn't connect to server :0 at C:/strawberry/perl/site/bin/../lib/MongoDB/MongoClient.pm line 207.
+
+[Mon Jan 28 10:53:31 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 10:53:31 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 10:53:31 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:53:31 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:53:31 2013] [debug] 500 Internal Server Error (0.039906s, 25.059/s).
+[Mon Jan 28 10:53:34 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:53:34 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:53:34 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:53:34 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:53:34 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:53:34 2013] [debug] 200 OK (0.020762s, 48.165/s).
+[Mon Jan 28 10:53:36 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:53:36 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:53:36 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 10:53:36 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:53:36 2013] [debug] 200 OK (0.008994s, 111.185/s).
+[Mon Jan 28 10:53:37 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:53:37 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:53:38 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 10:53:38 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:53:38 2013] [debug] 200 OK (0.535587s, 1.867/s).
+[Mon Jan 28 10:54:34 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:54:34 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:54:34 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:54:34 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:54:34 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:54:34 2013] [debug] 200 OK (0.015900s, 62.893/s).
+[Mon Jan 28 10:54:36 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:54:36 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:54:36 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 10:54:36 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:54:36 2013] [debug] 200 OK (0.008267s, 120.963/s).
+[Mon Jan 28 10:54:38 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:54:38 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:54:38 2013] [error] Undefined subroutine &Mojo::Server::SandBox::710a22155b497315746bf609d2b8f184::Dumper called at mongoxplorer.pl line 36.
+
+[Mon Jan 28 10:54:38 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 10:54:38 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 10:54:38 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:54:38 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:54:38 2013] [debug] 500 Internal Server Error (0.029851s, 33.500/s).
+[Mon Jan 28 10:54:43 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:54:43 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:54:43 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 10:54:43 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 10:54:43 2013] [debug] 200 OK (0.003664s, 272.926/s).
+[Mon Jan 28 10:54:58 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:54:58 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:54:58 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:54:58 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:54:58 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:54:58 2013] [debug] 200 OK (0.017485s, 57.192/s).
+[Mon Jan 28 10:55:00 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:55:00 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:55:00 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:55:00 2013] [error] couldn't connect to server :0 at C:/strawberry/perl/site/bin/../lib/MongoDB/MongoClient.pm line 207.
+
+[Mon Jan 28 10:55:00 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 10:55:00 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 10:55:00 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:55:00 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:55:00 2013] [debug] 500 Internal Server Error (0.036267s, 27.573/s).
+[Mon Jan 28 10:55:04 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:55:04 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:55:04 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:55:04 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:55:04 2013] [debug] 200 OK (0.008722s, 114.653/s).
+[Mon Jan 28 10:55:06 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:55:06 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:55:06 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 10:55:06 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:55:06 2013] [debug] 200 OK (0.009444s, 105.887/s).
+[Mon Jan 28 10:55:07 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:55:07 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:55:08 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 10:55:08 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:55:08 2013] [debug] 200 OK (0.568735s, 1.758/s).
+[Mon Jan 28 10:55:30 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:55:30 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:55:30 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:55:30 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:55:30 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:55:30 2013] [debug] 200 OK (0.018912s, 52.876/s).
+[Mon Jan 28 10:55:31 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:55:31 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:55:31 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 10:55:31 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:55:31 2013] [debug] 200 OK (0.010123s, 98.785/s).
+[Mon Jan 28 10:55:32 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:55:32 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:55:33 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 10:55:33 2013] [error] Not an ARRAY reference at template collectiondetails.html.ep line 11.
+6: });
+7: </script>
+8: 
+9: <h1>Détails de la collection <%= $collectionname %></h1>
+10: 
+11: % foreach my $collectiod (@$collection_content){
+12: 	<%= $collectiod %>
+13: % }
+14: <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
+15: <input type="submit" id="execute_command" value="Executer la commande" >
+
+[Mon Jan 28 10:55:33 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 10:55:33 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 10:55:33 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:55:33 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:55:33 2013] [debug] 500 Internal Server Error (0.592128s, 1.689/s).
+[Mon Jan 28 10:55:43 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:55:43 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:55:43 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 10:55:43 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 10:55:43 2013] [debug] 200 OK (0.005037s, 198.531/s).
+[Mon Jan 28 10:56:16 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:56:16 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:56:16 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:56:16 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 10:56:16 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:56:16 2013] [debug] 200 OK (0.011940s, 83.752/s).
+[Mon Jan 28 10:56:18 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:56:18 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:56:18 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:56:18 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:56:18 2013] [debug] 200 OK (0.014087s, 70.987/s).
+[Mon Jan 28 10:56:20 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:56:20 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:56:20 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 10:56:20 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:56:20 2013] [debug] 200 OK (0.009688s, 103.220/s).
+[Mon Jan 28 10:56:21 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:56:21 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:56:22 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 10:56:22 2013] [error] Missing $ on loop variable at template collectiondetails.html.ep line 11.
+
+[Mon Jan 28 10:56:22 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 10:56:22 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 10:56:22 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:56:22 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:56:22 2013] [debug] 500 Internal Server Error (0.585259s, 1.709/s).
+[Mon Jan 28 10:56:53 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:56:53 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:56:53 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 10:56:53 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 10:56:53 2013] [debug] 200 OK (0.004825s, 207.254/s).
+[Mon Jan 28 10:56:55 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:56:55 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:56:55 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:56:55 2013] [error] couldn't connect to server :0 at C:/strawberry/perl/site/bin/../lib/MongoDB/MongoClient.pm line 207.
+
+[Mon Jan 28 10:56:55 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 10:56:55 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 10:56:55 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:56:55 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:56:55 2013] [debug] 500 Internal Server Error (0.036847s, 27.139/s).
+[Mon Jan 28 10:56:58 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:56:58 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:56:58 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:56:58 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:56:58 2013] [debug] 200 OK (0.015904s, 62.877/s).
+[Mon Jan 28 10:56:59 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:56:59 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:56:59 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 10:56:59 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:56:59 2013] [debug] 200 OK (0.009818s, 101.854/s).
+[Mon Jan 28 10:57:00 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:57:00 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:57:01 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 10:57:01 2013] [error] Global symbol "%collectiod" requires explicit package name at template collectiondetails.html.ep line 12.
+7: </script>
+8: 
+9: <h1>Détails de la collection <%= $collectionname %></h1>
+10: 
+11: % foreach my $collectiod (@$collection_content){
+12: 	<%= %collectiod %>
+13: % }
+14: <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
+15: <input type="submit" id="execute_command" value="Executer la commande" >
+
+[Mon Jan 28 10:57:01 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 10:57:01 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 10:57:01 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:57:01 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:57:01 2013] [debug] 500 Internal Server Error (0.593178s, 1.686/s).
+[Mon Jan 28 10:58:49 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 10:58:49 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:58:49 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:58:49 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 10:58:49 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:58:49 2013] [debug] 200 OK (0.018409s, 54.321/s).
+[Mon Jan 28 10:58:51 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:58:51 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:58:51 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 10:58:51 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 10:58:51 2013] [debug] 200 OK (0.011972s, 83.528/s).
+[Mon Jan 28 10:58:52 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 10:58:52 2013] [debug] Routing to a callback.
+[Mon Jan 28 10:58:53 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 10:58:53 2013] [error] Not an ARRAY reference at template collectiondetails.html.ep line 12.
+7: </script>
+8: 
+9: <h1>Détails de la collection <%= $collectionname %></h1>
+10: 
+11: % foreach my $collectiod (@$collection_content){
+12: 	% foreach my $collectiodZ (@$collectiod){
+13: 		<%= $collectiodZ %>
+14: 	% }
+15: % }
+16: <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
+17: <input type="submit" id="execute_command" value="Executer la commande" >
+
+[Mon Jan 28 10:58:53 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 10:58:53 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 10:58:53 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:58:53 2013] [debug] Rendering inline template.
+[Mon Jan 28 10:58:53 2013] [debug] 500 Internal Server Error (0.591819s, 1.690/s).
+[Mon Jan 28 11:00:08 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:00:08 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:00:08 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:00:08 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:00:08 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:00:08 2013] [debug] 200 OK (0.020970s, 47.687/s).
+[Mon Jan 28 11:00:10 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:00:10 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:00:10 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:00:10 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:00:10 2013] [debug] 200 OK (0.010311s, 96.984/s).
+[Mon Jan 28 11:00:11 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:00:11 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:00:11 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:00:11 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:00:11 2013] [debug] 200 OK (0.553502s, 1.807/s).
+[Mon Jan 28 11:01:16 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:01:16 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:01:16 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:01:16 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:01:16 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:01:16 2013] [debug] 200 OK (0.011255s, 88.849/s).
+[Mon Jan 28 11:01:18 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:01:18 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:01:18 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:01:18 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:01:18 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:01:18 2013] [debug] 200 OK (0.016917s, 59.112/s).
+[Mon Jan 28 11:01:20 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:01:20 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:01:20 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:01:20 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:01:20 2013] [debug] 200 OK (0.010101s, 99.000/s).
+[Mon Jan 28 11:01:21 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:01:21 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:01:22 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:01:22 2013] [error] Global symbol "%tgs" requires explicit package name at template collectiondetails.html.ep line 11.
+syntax error at template collectiondetails.html.ep line 12, near "foreach @"
+Global symbol "%tgs" requires explicit package name at template collectiondetails.html.ep line 12.
+syntax error at template collectiondetails.html.ep line 12, near "} {"
+syntax error at template collectiondetails.html.ep line 15, near "} 
+ }"
+Global symbol "$_M" requires explicit package name at template collectiondetails.html.ep line 16.
+Global symbol "$_M" requires explicit package name at template collectiondetails.html.ep line 17.
+Global symbol "$_M" requires explicit package name at template collectiondetails.html.ep line 17.
+syntax error at template collectiondetails.html.ep line 17, near "$_M }"
+12: 	% foreach @{$tgs{$key}} {
+13: 		<%= $_ %>
+14: 	% }
+15: % }
+16: <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
+17: <input type="submit" id="execute_command" value="Executer la commande" >
+
+[Mon Jan 28 11:01:22 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:01:22 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:01:22 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:01:22 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:01:22 2013] [debug] 500 Internal Server Error (0.596606s, 1.676/s).
+[Mon Jan 28 11:12:14 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:12:14 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:14 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:14 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:12:14 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:12:14 2013] [debug] 200 OK (0.010895s, 91.785/s).
+[Mon Jan 28 11:12:16 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:16 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:16 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:12:16 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:12:16 2013] [debug] 200 OK (0.014233s, 70.259/s).
+[Mon Jan 28 11:12:17 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:17 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:17 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:12:17 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:12:17 2013] [debug] 200 OK (0.009549s, 104.723/s).
+[Mon Jan 28 11:12:18 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:18 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:20 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:12:20 2013] [error] Global symbol "$string" requires explicit package name at template collectiondetails.html.ep line 11.
+6: });
+7: </script>
+8: 
+9: <h1>Détails de la collection <%= $collectionname %></h1>
+10: 
+11: 	<%= $string %>
+12: 	
+13: <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
+14: <input type="submit" id="execute_command" value="Executer la commande" >
+
+[Mon Jan 28 11:12:20 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:12:20 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:12:20 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:12:20 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:12:20 2013] [debug] 500 Internal Server Error (1.211378s, 0.826/s).
+[Mon Jan 28 11:12:24 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:24 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:24 2013] [debug] Rendering cached template index.html.ep.
+[Mon Jan 28 11:12:24 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:12:24 2013] [debug] 200 OK (0.002196s, 455.373/s).
+[Mon Jan 28 11:12:45 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:12:45 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:45 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:45 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:12:45 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:12:45 2013] [debug] 200 OK (0.011068s, 90.351/s).
+[Mon Jan 28 11:12:46 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:46 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:46 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:12:46 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:12:46 2013] [debug] 200 OK (0.014491s, 69.008/s).
+[Mon Jan 28 11:12:49 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:49 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:49 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:12:49 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:12:49 2013] [debug] 200 OK (0.009894s, 101.071/s).
+[Mon Jan 28 11:12:50 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:12:50 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:12:51 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:12:51 2013] [error] Global symbol "$stringgg" requires explicit package name at template collectiondetails.html.ep line 11.
+6: });
+7: </script>
+8: 
+9: <h1>Détails de la collection <%= $collectionname %></h1>
+10: 
+11: 	<%= $stringgg %>
+12: 	
+13: <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
+14: <input type="submit" id="execute_command" value="Executer la commande" >
+
+[Mon Jan 28 11:12:51 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:12:51 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:12:51 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:12:51 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:12:51 2013] [debug] 500 Internal Server Error (1.207915s, 0.828/s).
+[Mon Jan 28 11:13:10 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:13:10 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:13:10 2013] [debug] Rendering cached template collectionlist.html.ep.
+[Mon Jan 28 11:13:10 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:13:10 2013] [debug] 200 OK (0.004313s, 231.857/s).
+[Mon Jan 28 11:13:12 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:13:12 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:13:12 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:13:12 2013] [error] couldn't connect to server :0 at C:/strawberry/perl/site/bin/../lib/MongoDB/MongoClient.pm line 207.
+
+[Mon Jan 28 11:13:12 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:13:12 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:13:12 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:13:12 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:13:12 2013] [debug] 500 Internal Server Error (0.039130s, 25.556/s).
+[Mon Jan 28 11:13:15 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:13:15 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:13:15 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:13:15 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:13:15 2013] [debug] 200 OK (0.013702s, 72.982/s).
+[Mon Jan 28 11:13:17 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:13:17 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:13:17 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:13:17 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:13:17 2013] [debug] 200 OK (0.010296s, 97.125/s).
+[Mon Jan 28 11:13:18 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:13:18 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:13:19 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:13:19 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:13:19 2013] [debug] 200 OK (1.182838s, 0.845/s).
+[Mon Jan 28 11:16:25 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:16:25 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:16:25 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:16:25 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:16:25 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:16:25 2013] [debug] 200 OK (0.017434s, 57.359/s).
+[Mon Jan 28 11:16:27 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:16:27 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:16:27 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:16:27 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:16:27 2013] [debug] 200 OK (0.001989s, 502.765/s).
+[Mon Jan 28 11:16:28 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:16:28 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:16:28 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:16:28 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:16:28 2013] [debug] 200 OK (0.010708s, 93.388/s).
+[Mon Jan 28 11:16:35 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:16:35 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:16:35 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 11:16:35 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:16:35 2013] [debug] 200 OK (0.004235s, 236.128/s).
+[Mon Jan 28 11:24:02 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:24:02 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:02 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:02 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:24:02 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:24:02 2013] [debug] 200 OK (0.017327s, 57.713/s).
+[Mon Jan 28 11:24:02 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:02 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:02 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:24:02 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:24:02 2013] [debug] 200 OK (0.008499s, 117.661/s).
+[Mon Jan 28 11:24:04 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:04 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:04 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 11:24:04 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:24:04 2013] [debug] 200 OK (0.004375s, 228.571/s).
+[Mon Jan 28 11:24:05 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:05 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:05 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:24:05 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:24:05 2013] [debug] 200 OK (0.010008s, 99.920/s).
+[Mon Jan 28 11:24:07 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:07 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:07 2013] [error] Undefined subroutine &Mojo::Server::SandBox::db5b2061a4ea468b1c6c1e94e3ba67d0::json_encode called at mongoxplorer.pl line 40.
+
+[Mon Jan 28 11:24:07 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:24:07 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:24:07 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:24:07 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:24:07 2013] [debug] 500 Internal Server Error (0.031533s, 31.713/s).
+[Mon Jan 28 11:24:31 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:31 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:31 2013] [debug] Rendering cached template index.html.ep.
+[Mon Jan 28 11:24:31 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:24:31 2013] [debug] 200 OK (0.002024s, 494.071/s).
+[Mon Jan 28 11:24:32 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:24:32 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:32 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:32 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:24:32 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:24:32 2013] [debug] 200 OK (0.016788s, 59.566/s).
+[Mon Jan 28 11:24:34 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:34 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:34 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:24:34 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:24:34 2013] [debug] 200 OK (0.010968s, 91.174/s).
+[Mon Jan 28 11:24:35 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:24:35 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:24:35 2013] [error] hash- or arrayref expected (not a simple scalar, use allow_nonref to allow this) at mongoxplorer.pl line 40.
+
+[Mon Jan 28 11:24:35 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:24:35 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:24:35 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:24:35 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:24:35 2013] [debug] 500 Internal Server Error (0.035232s, 28.383/s).
+[Mon Jan 28 11:26:29 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:26:29 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:26:29 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:26:29 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:26:29 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:26:29 2013] [debug] 200 OK (0.017673s, 56.583/s).
+[Mon Jan 28 11:26:29 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:26:29 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:26:29 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:26:29 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:26:29 2013] [debug] 200 OK (0.009038s, 110.644/s).
+[Mon Jan 28 11:26:29 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:26:29 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:26:29 2013] [debug] Rendering cached template index.html.ep.
+[Mon Jan 28 11:26:29 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:26:29 2013] [debug] 200 OK (0.002074s, 482.160/s).
+[Mon Jan 28 11:26:29 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:26:29 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:26:29 2013] [debug] Rendering cached template index.html.ep.
+[Mon Jan 28 11:26:29 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:26:29 2013] [debug] 200 OK (0.002217s, 451.060/s).
+[Mon Jan 28 11:26:37 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:26:37 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:26:37 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 11:26:37 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:26:37 2013] [debug] 200 OK (0.004326s, 231.160/s).
+[Mon Jan 28 11:26:39 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:26:39 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:26:39 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:26:39 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:26:39 2013] [debug] 200 OK (0.010449s, 95.703/s).
+[Mon Jan 28 11:26:40 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:26:40 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:26:40 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:26:40 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:26:40 2013] [debug] 200 OK (0.010883s, 91.886/s).
+[Mon Jan 28 11:28:47 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:28:47 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:28:47 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:28:47 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:28:47 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:28:47 2013] [debug] 200 OK (0.011969s, 83.549/s).
+[Mon Jan 28 11:28:49 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:28:49 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:28:49 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:28:49 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:28:49 2013] [debug] 200 OK (0.014047s, 71.190/s).
+[Mon Jan 28 11:28:50 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:28:50 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:28:50 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:28:50 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:28:50 2013] [debug] 200 OK (0.009994s, 100.060/s).
+[Mon Jan 28 11:28:52 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:28:52 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:28:52 2013] [error] encountered object '4f23b2021ba04bc92e0003d2', but neither allow_blessed nor convert_blessed settings are enabled at lib/MongoXplorer.pm line 54.
+
+[Mon Jan 28 11:28:52 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:28:52 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:28:52 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:28:52 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:28:52 2013] [debug] 500 Internal Server Error (0.030921s, 32.340/s).
+[Mon Jan 28 11:30:23 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:30:23 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:30:23 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:30:23 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:30:23 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:30:23 2013] [debug] 200 OK (0.016995s, 58.841/s).
+[Mon Jan 28 11:30:25 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:30:25 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:30:25 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:30:25 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:30:25 2013] [debug] 200 OK (0.009375s, 106.667/s).
+[Mon Jan 28 11:30:26 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:30:26 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:30:26 2013] [error] hash- or arrayref expected (not a simple scalar, use allow_nonref to allow this) at lib/MongoXplorer.pm line 54.
+
+[Mon Jan 28 11:30:26 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:30:26 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:30:26 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:30:26 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:30:26 2013] [debug] 500 Internal Server Error (0.019207s, 52.064/s).
+[Mon Jan 28 11:32:04 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:32:04 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:32:04 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:32:04 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:32:04 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:32:04 2013] [debug] 200 OK (0.019017s, 52.585/s).
+[Mon Jan 28 11:32:04 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:32:04 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:32:04 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 11:32:04 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:32:04 2013] [debug] 200 OK (0.004481s, 223.164/s).
+[Mon Jan 28 11:32:04 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:32:04 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:32:04 2013] [debug] Rendering cached template dblist.html.ep.
+[Mon Jan 28 11:32:04 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:32:04 2013] [debug] 200 OK (0.004708s, 212.404/s).
+[Mon Jan 28 11:36:43 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:36:43 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:36:43 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:36:43 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:36:43 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:36:43 2013] [debug] 200 OK (0.011882s, 84.161/s).
+[Mon Jan 28 11:36:45 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:36:45 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:36:45 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:36:45 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:36:45 2013] [debug] 200 OK (0.013945s, 71.710/s).
+[Mon Jan 28 11:36:46 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:36:46 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:36:46 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:36:46 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:36:46 2013] [debug] 200 OK (0.009980s, 100.200/s).
+[Mon Jan 28 11:36:48 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:36:48 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:36:48 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:36:48 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:36:48 2013] [debug] 200 OK (0.012396s, 80.671/s).
+[Mon Jan 28 11:37:48 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:37:48 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:37:48 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:37:48 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:37:48 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:37:48 2013] [debug] 200 OK (0.017472s, 57.234/s).
+[Mon Jan 28 11:37:50 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:37:50 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:37:50 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:37:50 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:37:50 2013] [debug] 200 OK (0.009599s, 104.178/s).
+[Mon Jan 28 11:37:51 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:37:51 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:37:51 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:37:51 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:37:51 2013] [debug] 200 OK (0.013823s, 72.343/s).
+[Mon Jan 28 11:38:07 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:38:07 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:38:07 2013] [debug] Rendering cached template collectiondetails.html.ep.
+[Mon Jan 28 11:38:07 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:38:07 2013] [debug] 200 OK (0.008457s, 118.245/s).
+[Mon Jan 28 11:38:13 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:38:13 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:38:13 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:38:13 2013] [error] couldn't connect to server :0 at C:/strawberry/perl/site/bin/../lib/MongoDB/MongoClient.pm line 207.
+
+[Mon Jan 28 11:38:13 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:38:13 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:38:13 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:38:13 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:38:13 2013] [debug] 500 Internal Server Error (0.042099s, 23.754/s).
+[Mon Jan 28 11:38:17 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:38:17 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:38:17 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:38:17 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:38:17 2013] [debug] 200 OK (0.009611s, 104.047/s).
+[Mon Jan 28 11:38:18 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:38:18 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:38:18 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:38:18 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:38:18 2013] [debug] 200 OK (0.009242s, 108.202/s).
+[Mon Jan 28 11:38:19 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:38:19 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:38:19 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:38:19 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:38:19 2013] [debug] 200 OK (0.014024s, 71.306/s).
+[Mon Jan 28 11:40:20 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:40:20 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:40:20 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:40:20 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:40:20 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:40:20 2013] [debug] 200 OK (0.019685s, 50.800/s).
+[Mon Jan 28 11:40:26 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:40:26 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:40:26 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:40:26 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:40:26 2013] [debug] 200 OK (0.009412s, 106.247/s).
+[Mon Jan 28 11:40:33 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:40:33 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:40:33 2013] [debug] Rendering cached template index.html.ep.
+[Mon Jan 28 11:40:33 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:40:33 2013] [debug] 200 OK (0.002285s, 437.637/s).
+[Mon Jan 28 11:40:34 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:41:09 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:41:10 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:10 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:10 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:41:10 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:41:10 2013] [debug] 200 OK (0.010547s, 94.814/s).
+[Mon Jan 28 11:41:12 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:12 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:12 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:41:12 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:41:12 2013] [debug] 200 OK (0.013445s, 74.377/s).
+[Mon Jan 28 11:41:13 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:13 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:13 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:41:13 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:41:13 2013] [debug] 200 OK (0.011740s, 85.179/s).
+[Mon Jan 28 11:41:15 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:15 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:15 2013] [error] recv timed out (30000 ms) at C:/strawberry/perl/site/bin/../lib/MongoDB/Cursor.pm line 161.
+
+[Mon Jan 28 11:41:15 2013] [debug] Template "exception.development.html.ep" not found.
+[Mon Jan 28 11:41:15 2013] [debug] Template "exception.html.ep" not found.
+[Mon Jan 28 11:41:15 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:41:15 2013] [debug] Rendering inline template.
+[Mon Jan 28 11:41:15 2013] [debug] 500 Internal Server Error (0.031678s, 31.568/s).
+[Mon Jan 28 11:41:23 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:23 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:23 2013] [debug] Rendering cached template index.html.ep.
+[Mon Jan 28 11:41:23 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:41:23 2013] [debug] 200 OK (0.002080s, 480.769/s).
+[Mon Jan 28 11:41:38 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:38 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:38 2013] [debug] Rendering cached template index.html.ep.
+[Mon Jan 28 11:41:38 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Mon Jan 28 11:41:38 2013] [debug] 200 OK (0.001959s, 510.465/s).
+[Mon Jan 28 11:41:50 2013] [info] Listening at "http://*:3000".
+[Mon Jan 28 11:41:50 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:41:50 2013] [debug] GET / (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:50 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:50 2013] [debug] Rendering template "index.html.ep".
+[Mon Jan 28 11:41:50 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:41:50 2013] [debug] 200 OK (0.012018s, 83.209/s).
+[Mon Jan 28 11:41:51 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:51 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:51 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:41:51 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:41:51 2013] [debug] 200 OK (0.015055s, 66.423/s).
+[Mon Jan 28 11:41:53 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:53 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:53 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:41:53 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:41:53 2013] [debug] 200 OK (0.009576s, 104.428/s).
+[Mon Jan 28 11:41:54 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:41:54 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:41:54 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:41:54 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:41:54 2013] [debug] 200 OK (0.014875s, 67.227/s).
+[Mon Jan 28 11:43:28 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:43:28 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:43:28 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:43:28 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:43:28 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:43:28 2013] [debug] 200 OK (0.018526s, 53.978/s).
+[Mon Jan 28 11:43:29 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:43:29 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:43:29 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:43:29 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:43:29 2013] [debug] 200 OK (0.009671s, 103.402/s).
+[Mon Jan 28 11:43:30 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:43:30 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:43:30 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:43:30 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:43:30 2013] [debug] 200 OK (0.013301s, 75.182/s).
+[Mon Jan 28 11:44:57 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 11:44:57 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:44:57 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:44:57 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 11:44:57 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:44:57 2013] [debug] 200 OK (0.017008s, 58.796/s).
+[Mon Jan 28 11:44:59 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:44:59 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:44:59 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 11:44:59 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:44:59 2013] [debug] 200 OK (0.010947s, 91.349/s).
+[Mon Jan 28 11:45:00 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 11:45:00 2013] [debug] Routing to a callback.
+[Mon Jan 28 11:45:00 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 11:45:00 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 11:45:00 2013] [debug] 200 OK (0.012752s, 78.419/s).
