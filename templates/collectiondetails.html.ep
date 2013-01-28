@@ -1,7 +1,13 @@
 % layout 'default';
+<script>
+$(document).ready(function(){
+
+
+});
+</script>
+
 <h1>Détails de la collection <%= $collectionname %></h1>
 
-<%= $collection_content %>
 
 <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
 <input type="submit" id="execute_command" value="Executer la commande" >

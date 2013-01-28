@@ -6,6 +6,8 @@ use MongoDB;
 use MongoDB::OID;
 use strict;
 use warnings;
+use Data::Dumper;
+use JSON;
 
 my $g_instance_name;
 my $g_instance_port;
@@ -45,9 +47,15 @@ sub get_collection_data
 	my $mongo_connection = MongoDB::MongoClient->new(host => $g_instance_name.':'.$g_instance_port);
 	my $db = $mongo_connection->get_database( $db_name );
 	my $collection_content = $db->get_collection( $collection_name );
-	my $data = $collection_content->find_one({ "yahoo.woe" => {'$exists' => 1} });
+	my $data = $collection_content->find();
 	
-	return $data;
+	my @arr_data;
+	while (my $record = $data->next){
+		push(@arr_data, $record);
+	}
+	print Dumper(@arr_data);
+	
+	return @arr_data;
 }
 
 1;
