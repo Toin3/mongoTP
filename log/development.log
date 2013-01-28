@@ -749,3 +749,19 @@ syntax error at template collectiondetails.html.ep line 17, near "$_M }"
 [Mon Jan 28 11:45:00 2013] [debug] Rendering template "collectiondetails.html.ep".
 [Mon Jan 28 11:45:00 2013] [debug] Rendering template "layouts/default.html.ep".
 [Mon Jan 28 11:45:00 2013] [debug] 200 OK (0.012752s, 78.419/s).
+[Mon Jan 28 12:24:08 2013] [debug] Your secret passphrase needs to be changed!!!
+[Mon Jan 28 12:24:08 2013] [debug] POST /dblist (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 12:24:08 2013] [debug] Routing to a callback.
+[Mon Jan 28 12:24:08 2013] [debug] Rendering template "dblist.html.ep".
+[Mon Jan 28 12:24:08 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 12:24:08 2013] [debug] 200 OK (0.018321s, 54.582/s).
+[Mon Jan 28 12:24:10 2013] [debug] GET /databasename/dbtp (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 12:24:10 2013] [debug] Routing to a callback.
+[Mon Jan 28 12:24:10 2013] [debug] Rendering template "collectionlist.html.ep".
+[Mon Jan 28 12:24:10 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 12:24:10 2013] [debug] 200 OK (0.008836s, 113.173/s).
+[Mon Jan 28 12:24:11 2013] [debug] GET /collectiondetails/dbtp/cities (Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0).
+[Mon Jan 28 12:24:11 2013] [debug] Routing to a callback.
+[Mon Jan 28 12:24:11 2013] [debug] Rendering template "collectiondetails.html.ep".
+[Mon Jan 28 12:24:11 2013] [debug] Rendering template "layouts/default.html.ep".
+[Mon Jan 28 12:24:11 2013] [debug] 200 OK (0.012990s, 76.982/s).
