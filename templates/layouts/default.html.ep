@@ -10,6 +10,9 @@
 		
     </head>
     <body>
-	<div id="logo"></div>
-	<%= content %></body>
+		<div id="page">
+			<div id="logo"></div>
+			<%= content %></body>
+		</div>
+	</body>
 </html>

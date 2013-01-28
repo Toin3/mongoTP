@@ -1,7 +1,9 @@
 % layout 'default';
-<h1>Liste des bases</h1>
-<ul>
-	% foreach my $database (@$dbs) {
-		<li><a href="/databasename/<%= $database %>"><%= $database %></a></li>
-	% }
-</ul>
+<h1>Liste des bases accessibles depuis cette instance</h1>
+<div id="dblist">
+	<ul>
+		% foreach my $database (@$dbs) {
+			<li><a href="/databasename/<%= $database %>"><%= $database %></a></li>
+		% }
+	</ul>
+</div>

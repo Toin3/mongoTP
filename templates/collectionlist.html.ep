@@ -3,9 +3,11 @@
 % if (join('', @$collections) eq "") {
 	<p>Aucune collections dans cette base de données</p>
 % } else {
-<ul>
+<div id="dblist">
+	<ul>
 	% foreach my $collectionname (@$collections){
 		<li><a href="/collectiondetails/<%= $databasename %>/<%= $collectionname %>"><%= $collectionname %></a></li>
 	% }
-</ul>
+	</ul>
+</div>
 % }
