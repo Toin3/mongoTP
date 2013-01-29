@@ -42,7 +42,8 @@ $(document).ready(function()
 	$('.bracket').click(function()
 	{
 		var query = 'db.<%= $collectionname %>.find({' + $(this).attr('id').split('_')[1] + ': {$exists: true}});';	
-		$('#shell').html(query);
+		console.log(query);
+		$('#shell').val(query);
 		$.ajax({
   			type: "POST",
   			url: "/ajax/execute",
@@ -57,7 +58,8 @@ $(document).ready(function()
 	/* shell exec */
 	$('#execute_command').click(function()
 	{
-		var query = $('#shell').html();
+		var query = $('#shell').val();
+		console.log(query);
 		$.ajax({
                         type: "POST",
                         url: "/ajax/execute",
@@ -67,6 +69,8 @@ $(document).ready(function()
                 });
 	
 	});
+	
+
 
 });
 </script>
