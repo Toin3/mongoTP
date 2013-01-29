@@ -6,7 +6,7 @@
 <div id="dblist">
 	<ul>
 	% foreach my $collectionname (@$collections){
-		<li><a href="/collectiondetails/<%= $databasename %>/<%= $collectionname %>"><%= $collectionname %></a></li>
+		<li><a href="/collectiondetails/<%= $collectionname %>"><%= $collectionname %></a></li>
 	% }
 	</ul>
 </div>
