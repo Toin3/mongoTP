@@ -2,15 +2,66 @@
 <script>
 $(document).ready(function()
 {
- 	var collarr = eval(<%= $collection_content %>);
- 	console.log(collarr);
+ 	var collection = eval(<%= $collection_content %>);
+	//console.log(collarr);
+	var counter = new Object();
+
+	for(var documentIndex in collection)
+	{
+		var document = collection[documentIndex];
+		
+		for(var entryIndex in document)
+		{
+			var entry = document[entryIndex];
+
+			if(!counter[entryIndex])
+				counter[entryIndex] = new Object({bracket: 0, square: 0, arrow: 0});
+		
+			counter[entryIndex]['bracket']++;
+			
+			if(entry != null && typeof entry === 'object')
+				counter[entryIndex]['arrow']++;
+			
+			/*
+			// on creuse un peu plus...
+			for(var contentIndex in entry)
+			{
+				var content = entry[contentIndex];
+				console.log(content);				
+
+		
+			}
+			*/
+			
+			
+			console.log('new entry');
+			console.log(entryIndex);
+			console.log(entry);
+			
+		}
+		
+
+	}
+
+	console.log(counter);	
+
+	var first_line = '';
+	for(var entryIndex in counter)
+	{
+		var counts = counter[entryIndex];
+		
+		first_line += entryIndex + ' (' + counts['bracket'] + ')' + (counts['arrow'] > 0 ? ' <' + counts['arrow']  + '>' : '')  + ', ';
+	}
+
+	$('#collection_content').html(first_line);
+
 });
 </script>
 
 <h1>Détails de la collection <%= $collectionname %></h1>
 
 <div id="collection_content">
-	<%= $collection_content %>
+	
 </div>
 
 <textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
