@@ -12,6 +12,7 @@ use JSON;
 my $g_instance_name;
 my $g_instance_port;
 my $g_database_name;
+my $g_collection_name;
 
 sub get_databases {
 	my $self = shift;
@@ -64,7 +65,30 @@ sub get_collection_data
 	}
 
  	my $formated_json = '['.join(',', @arr_data).']';
+	$g_collection_name = $collection_name;
  	return $formated_json;
+}
+
+sub execute_query
+{
+	my $self = shift;
+ 	my ( $query ) = @_;
+	my $mongo_connection = MongoDB::MongoClient->new(host => $g_instance_name.':'.$g_instance_port);
+	my $db = $mongo_connection->get_database( $g_database_name );
+	my $data;
+	my $rv = eval { $data = $db->get_collection($g_collection_name)->find( $query )};
+	if ($@) {
+		return "bad-query";
+	} else
+	{
+		my @arr_data;
+		while (my $record = $data->next)
+		{
+			push(@arr_data, to_json($record,{allow_blessed=>1,convert_blessed=>1, utf8=>1}));
+		}
+		my $formated_json = '['.join(',', @arr_data).']';
+		return $formated_json;
+	}
 }
 
 1;

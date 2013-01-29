@@ -35,11 +35,17 @@ get '/databasename/:collectionname' => sub {
 };
 
 get '/collectiondetails/:collectionname' => sub {
-    	my $self = shift;
+    my $self = shift;
 	my $data = MongoXplorer->get_collection_data($self->param('collectionname'));
  	my $jsonifier = $self->render(json => $data, partial => 1);
-    	$self->render('collectiondetails', title => 'Aperçu de la collection '.$self->param('collectionname'), collectionname => $self->param('collectionname'), collection_content => $jsonifier);
+    $self->render('collectiondetails', title => 'Aperçu de la collection '.$self->param('collectionname'), collectionname => $self->param('collectionname'), collection_content => $jsonifier);
 };
 
+post '/ajax/execute' => sub {
+	my $self = shift;
+	my $data = MongoXplorer->execute_query($self->param('query'));
+	
+	$self->render(json => $data);
+};
 
 app->start;
