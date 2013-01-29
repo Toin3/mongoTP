@@ -3,9 +3,9 @@
 $(document).ready(function()
 {
  	var collection = eval(<%= $collection_content %>);
-	//console.log(collarr);
 	var counter = new Object();
-
+	
+	/* On itère sur la collection */
 	for(var documentIndex in collection)
 	{
 		var document = collection[documentIndex];
@@ -20,40 +20,38 @@ $(document).ready(function()
 			counter[entryIndex]['bracket']++;
 			
 			if(entry != null && typeof entry === 'object')
-				counter[entryIndex]['arrow']++;
-			
-			/*
-			// on creuse un peu plus...
-			for(var contentIndex in entry)
-			{
-				var content = entry[contentIndex];
-				console.log(content);				
-
-		
-			}
-			*/
-			
-			
-			console.log('new entry');
-			console.log(entryIndex);
-			console.log(entry);
-			
+				counter[entryIndex]['arrow']++;			
 		}
-		
-
 	}
 
-	console.log(counter);	
-
+	
+	/* On build la liste */
 	var first_line = '';
 	for(var entryIndex in counter)
 	{
-		var counts = counter[entryIndex];
-		
-		first_line += entryIndex + ' (' + counts['bracket'] + ')' + (counts['arrow'] > 0 ? ' <' + counts['arrow']  + '>' : '')  + ', ';
+		var counts = counter[entryIndex];			
+		first_line += entryIndex;
+		first_line += ' <a class="bracket" id="b_'+entryIndex+'" href="javascript:void(0);"> (' + counts['bracket'] + ')</a>';
+		first_line += (counts['arrow'] > 0 ? ' <a class="arrow" id="a_'+entryIndex+'" href="javascript:void(0);"><' + counts['arrow'] + '></a>' : '');
+		first_line += ', ';
 	}
-
 	$('#collection_content').html(first_line);
+
+
+	/* () */
+	$('.bracket').click(function()
+	{
+		var query = 'db.<%= $collectionname %>.find({' + $(this).attr('id').split('_')[1] + ': {$exists: true}});';	
+		$('#shell').html(query);
+		$.ajax({
+  			type: "POST",
+  			url: "/ajax/execute",
+  			data: { query: query }
+		}).done(function(data) {
+  			console.log(data);
+		});
+
+	});
 
 });
 </script>
@@ -64,5 +62,5 @@ $(document).ready(function()
 	
 </div>
 
-<textarea name="mongo_req" cols="150" rows="20" ></textarea><br />
-<input type="submit" id="execute_command" value="Executer la commande" >
+<textarea id="shell" name="mongo_req" cols="100" rows="10" ></textarea><br />
+<input type="submit" id="execute_command" value="Executer la commande" />
