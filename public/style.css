@@ -82,23 +82,31 @@ p, ol, ul, pre, form
 	width:600px;
 }
 
-#form_smithers {
+#form_smithers{
 	position:absolute;
-	margin-left:220px;
+	margin-left:210px;
 	margin-top:100px;
-	color: #4183C4;
-	text-decoration: none;
+}
+#stylized_form h1 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+#stylized_form label{
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	width:160px;
+	float:left;
 }
 
 #form_smithers input{
-	float:right;
-	margin-left:15px;
-	padding:5px;
-}
-
-#form_smithers div {
-	margin-bottom:14px;
-	line-height:200%
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:160px;
+	margin:-4px 0 20px 10px;
 }
 
 #submit_smithers {
