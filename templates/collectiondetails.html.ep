@@ -48,10 +48,27 @@ $(document).ready(function()
   			url: "/ajax/execute",
   			data: { query: query, projection: '' }
 		}).done(function(data) {
-  			console.log(data);
+  			console.log(eval(data));
 		});
 
 	});
+
+	/* <> */
+	/*
+	$('.arrow').click(function()
+	{
+		var query = '{"' + $(this).attr('id').split('_')[1] + '": {"$exists": 1}}';
+                $('#shell_query').val(query);
+                $.ajax({
+                        type: "POST",
+                        url: "/ajax/execute",
+                        data: { query: query, projection: '' }
+                }).done(function(data) {
+                        console.log(data);
+                });
+
+	});
+	*/
 
 	
 	/* shell exec */
@@ -65,7 +82,7 @@ $(document).ready(function()
                         url: "/ajax/execute",
                         data: { query: query, projection: projection }
                 }).done(function(data) {
-                        console.log(data);
+                        console.log(eval(data));
                 });
 	
 	});
@@ -81,7 +98,7 @@ $(document).ready(function()
 	
 </div>
 db.<%= $collectionname %>.find(
-<textarea id="shell_query" name="mongo_req" cols="50" rows="10" ></textarea>,
-<textarea id="shell_projection" name="mongo_proj" cols="50" rows="10" ></textarea>);
+<textarea id="shell_query" name="mongo_req" cols="50" rows="2" ></textarea>,
+<textarea id="shell_projection" name="mongo_proj" cols="50" rows="2" ></textarea>);
 <br />
 <input type="submit" id="execute_command" value="Executer la commande" />
