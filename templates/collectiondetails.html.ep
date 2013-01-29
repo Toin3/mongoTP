@@ -41,13 +41,12 @@ $(document).ready(function()
 	/* () */
 	$('.bracket').click(function()
 	{
-		var query = 'db.<%= $collectionname %>.find({' + $(this).attr('id').split('_')[1] + ': {$exists: true}});';	
-		console.log(query);
-		$('#shell').val(query);
+		var query = '{"' + $(this).attr('id').split('_')[1] + '": {"$exists": 1}}';
+		$('#shell_query').val(query);
 		$.ajax({
   			type: "POST",
   			url: "/ajax/execute",
-  			data: { query: query }
+  			data: { query: query, projection: '' }
 		}).done(function(data) {
   			console.log(data);
 		});
@@ -58,12 +57,13 @@ $(document).ready(function()
 	/* shell exec */
 	$('#execute_command').click(function()
 	{
-		var query = $('#shell').val();
+		var query = $('#shell_query').val();
+		var projection = $('#shell_projection').val();
 		console.log(query);
 		$.ajax({
                         type: "POST",
                         url: "/ajax/execute",
-                        data: { query: query }
+                        data: { query: query, projection: projection }
                 }).done(function(data) {
                         console.log(data);
                 });
@@ -80,6 +80,8 @@ $(document).ready(function()
 <div id="collection_content">
 	
 </div>
-
-<textarea id="shell" name="mongo_req" cols="100" rows="10" ></textarea><br />
+db.<%= $collectionname %>.find(
+<textarea id="shell_query" name="mongo_req" cols="50" rows="10" ></textarea>,
+<textarea id="shell_projection" name="mongo_proj" cols="50" rows="10" ></textarea>);
+<br />
 <input type="submit" id="execute_command" value="Executer la commande" />
