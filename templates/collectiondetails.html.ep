@@ -53,6 +53,21 @@ $(document).ready(function()
 
 	});
 
+	
+	/* shell exec */
+	$('#execute_command').click(function()
+	{
+		var query = $('#shell').html();
+		$.ajax({
+                        type: "POST",
+                        url: "/ajax/execute",
+                        data: { query: query }
+                }).done(function(data) {
+                        console.log(data);
+                });
+	
+	});
+
 });
 </script>
 
