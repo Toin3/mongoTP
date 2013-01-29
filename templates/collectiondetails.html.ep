@@ -1,42 +1,49 @@
 % layout 'default';
 <script>
+var buildLine = function(collection)
+{
+	var counter = new Object();
+	var line = '';
+	
+	/* On itère sur la collection */
+        for(var documentIndex in collection)
+        {
+                var document = collection[documentIndex];
+
+                for(var entryIndex in document)
+                {
+                        var entry = document[entryIndex];
+
+                        if(!counter[entryIndex])
+                                counter[entryIndex] = new Object({bracket: 0, square: 0, arrow: 0});
+
+                        counter[entryIndex]['bracket']++;
+
+                        if(entry != null && typeof entry === 'object')
+                                counter[entryIndex]['arrow']++;
+                }
+        }
+
+	/* On build la liste */
+        for(var entryIndex in counter)
+        {
+                var counts = counter[entryIndex];
+                line += entryIndex;
+                line += ' <a class="bracket" id="b_'+entryIndex+'" href="javascript:void(0);"> (' + counts['bracket'] + ')</a>';
+                line += (counts['arrow'] > 0 ? ' <a class="arrow" id="a_'+entryIndex+'" href="javascript:void(0);"><' + counts['arrow'] + '></a>' : '');
+                line += ', ';
+        }
+
+	return line;
+}
+
+
+
+
 $(document).ready(function()
 {
  	var collection = eval(<%= $collection_content %>);
-	var counter = new Object();
-	
-	/* On itère sur la collection */
-	for(var documentIndex in collection)
-	{
-		var document = collection[documentIndex];
-		
-		for(var entryIndex in document)
-		{
-			var entry = document[entryIndex];
-
-			if(!counter[entryIndex])
-				counter[entryIndex] = new Object({bracket: 0, square: 0, arrow: 0});
-		
-			counter[entryIndex]['bracket']++;
-			
-			if(entry != null && typeof entry === 'object')
-				counter[entryIndex]['arrow']++;			
-		}
-	}
-
-	
-	/* On build la liste */
-	var first_line = '';
-	for(var entryIndex in counter)
-	{
-		var counts = counter[entryIndex];			
-		first_line += entryIndex;
-		first_line += ' <a class="bracket" id="b_'+entryIndex+'" href="javascript:void(0);"> (' + counts['bracket'] + ')</a>';
-		first_line += (counts['arrow'] > 0 ? ' <a class="arrow" id="a_'+entryIndex+'" href="javascript:void(0);"><' + counts['arrow'] + '></a>' : '');
-		first_line += ', ';
-	}
-	$('#collection_content').html(first_line);
-
+	$('#collection_content').html(buildLine(collection));
 
 	/* () */
 	$('.bracket').click(function()
@@ -54,21 +61,21 @@ $(document).ready(function()
 	});
 
 	/* <> */
-	/*
 	$('.arrow').click(function()
 	{
 		var query = '{"' + $(this).attr('id').split('_')[1] + '": {"$exists": 1}}';
                 $('#shell_query').val(query);
+		var projection = '{"' + $(this).attr('id').split('_')[1] + '":1}';
+		$('#shell_projection').val(projection);
                 $.ajax({
                         type: "POST",
                         url: "/ajax/execute",
-                        data: { query: query, projection: '' }
+                        data: { query: query, projection: projection }
                 }).done(function(data) {
-                        console.log(data);
+                        var coll = eval(data);
+			var secondLine = buildLine(coll);
                 });
-
 	});
-	*/
 
 	
 	/* shell exec */
@@ -84,21 +91,21 @@ $(document).ready(function()
                 }).done(function(data) {
                         console.log(eval(data));
                 });
-	
 	});
-	
-
-
 });
 </script>
 
 <h1>Détails de la collection <%= $collectionname %></h1>
 
 <div id="collection_content">
-	
 </div>
+
+<br /><br />
+
+<center>
 db.<%= $collectionname %>.find(
 <textarea id="shell_query" name="mongo_req" cols="50" rows="2" ></textarea>,
 <textarea id="shell_projection" name="mongo_proj" cols="50" rows="2" ></textarea>);
 <br />
 <input type="submit" id="execute_command" value="Executer la commande" />
+</center>
