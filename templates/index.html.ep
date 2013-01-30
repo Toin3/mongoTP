@@ -15,11 +15,13 @@ $(document).ready(function(){
 </script>
 <div id="content">
 <h1>Demandez à Smithers pour vous connecter</h1>
-	
-	<div id="warnings"> 
-	%= flash 'warning_message' 
+	% if (flash 'warning_message') {
+	<div id="warning">
+		<div id="warnings_msg"> <p>
+		%= flash 'warning_message' 
+		</p> </div>
 	</div>
-	
+	% }
 	<div id="call_smithers">
 		<div id="stylized_form" class="connect_form">
 		<%= form_for dblist => (method => 'post') => begin %>

@@ -43,7 +43,7 @@ get '/collectiondetails/:collectionname' => sub {
 
 post '/ajax/execute' => sub {
 	my $self = shift;
-	my $data = MongoXplorer->execute_query($self->param('query'));
+	my $data = MongoXplorer->execute_query($self->param('query'), $self->param('projection'));
 	
 	$self->render(json => $data);
 };

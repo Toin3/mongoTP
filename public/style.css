@@ -74,6 +74,27 @@ p, ol, ul, pre, form
 	margin:auto;
 }
 
+/*--- Warnings ---*/
+#warnings_msg {
+	background-image:url('/ressources/warning.png');
+	background-repeat:no-repeat;
+	min-height:30px;
+}
+
+#warnings_msg p {
+	margin-left:40px;
+	padding-top:8px;
+}
+
+#warning{
+	padding:5px;
+	background-color:#d9edf7;
+	border-color:#bce8f1;
+	color:#3a87ad;
+	border-style:solid;
+	border-width:2px;
+}
+
 /*--- Accueil ---*/
 
 #call_smithers {

@@ -8,6 +8,7 @@ use strict;
 use warnings;
 use Data::Dumper;
 use JSON;
+use Mojo::JSON;
 
 my $g_instance_name;
 my $g_instance_port;
@@ -72,11 +73,14 @@ sub get_collection_data
 sub execute_query
 {
 	my $self = shift;
- 	my ( $query ) = @_;
+ 	my ( $json_query, $json_projection) = @_;
 	my $mongo_connection = MongoDB::MongoClient->new(host => $g_instance_name.':'.$g_instance_port);
 	my $db = $mongo_connection->get_database( $g_database_name );
+	my $json  = Mojo::JSON->new; 
+	my $query = $json->decode($json_query);
+	my $projection = $json->decode($json_projection);
 	my $data;
-	my $rv = eval { $data = $db->get_collection($g_collection_name)->find( $query )};
+	my $rv = eval { $data = $db->get_collection($g_collection_name)->find( $query, $projection )};
 	if ($@) {
 		return "bad-query";
 	} else
