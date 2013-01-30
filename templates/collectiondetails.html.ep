@@ -62,7 +62,7 @@ $(document).ready(function()
 		
 		var key = indexes[i]['key'];
 		for(var k in key)
-			if(key[k] == "2D")
+			if(key[k] == "2d" || key[k] == "2D")
 				loc2dIndexes.push(k);
 	}	
 	console.log(loc2dIndexes);
