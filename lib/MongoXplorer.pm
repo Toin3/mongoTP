@@ -70,6 +70,23 @@ sub get_collection_data
  	return $formated_json;
 }
 
+sub get_collection_index 
+{
+	my $self = shift;
+	my $mongo_connection = MongoDB::MongoClient->new(host => $g_instance_name.':'.$g_instance_port);
+	my $db = $mongo_connection->get_database( $g_database_name );
+	my @index2d = $db->get_collection($g_collection_name)->get_indexes;
+	my @indexTab;
+	
+	foreach my $item (@index2d)
+	{
+		push(@indexTab, to_json($item,{allow_blessed=>1,convert_blessed=>1, utf8=>1}));
+	}
+	my $jsonIndex = '['.join(',', @indexTab).']';
+	
+	return $jsonIndex;
+}
+
 sub execute_query
 {
 	my $self = shift;

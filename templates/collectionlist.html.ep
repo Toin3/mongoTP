@@ -1,7 +1,11 @@
 % layout 'default';
 <h1>Liste des collections de la base <%= $databasename %></h1>
 % if (join('', @$collections) eq "") {
-	<p>Aucune collections dans cette base de données</p>
+	<div id="warning">
+		<div id="warnings_msg">
+			<p>Aucune collections dans cette base de données</p>
+		</div>
+	</div>
 % } else {
 <div id="dblist">
 	<ul>
