@@ -1,82 +1,97 @@
 % layout 'default';
 <script>
-Array.prototype.contains = function(val)
+var tabContains = function(tab, val)
 {
-	for(var i in this)
-		if(this[i] == val)
+	for(var i in tab)
+		if(tab[i] == val)
 			return true;
 	return false;
 }
 
-
-var buildLine = function(collection)
+var buildLine = function(counter)
 {
-	var counter = new Object();
-	var line = '';
-	
-	/* On itère sur la collection */
-        for(var documentIndex in collection)
-        {
-                var document = collection[documentIndex];
-
-                for(var entryIndex in document)
-                {
-                        var entry = document[entryIndex];
-
-                        if(!counter[entryIndex])
-                                counter[entryIndex] = new Object({bracket: 0, square: 0, arrow: 0});
-
-                        counter[entryIndex]['bracket']++;
-
-                        if(entry != null && typeof entry === 'object')
-                                counter[entryIndex]['arrow']++;
-                }
-        }
-
-	/* On build la liste */
-        for(var entryIndex in counter)
-        {
-                var counts = counter[entryIndex];
-                line += entryIndex;
-                line += ' <a class="bracket" id="b_'+entryIndex+'" href="javascript:void(0);"> (' + counts['bracket'] + ')</a>';
-                line += (counts['arrow'] > 0 ? ' <a class="arrow" id="a_'+entryIndex+'" href="javascript:void(0);"><' + counts['arrow'] + '></a>' : '');
-		line += (loc2dIndexes.contains(entryIndex) ? ' <img title = "Afficher la carte" entry='+entryIndex+' src="/ressources/world.png" class="display_map"/> ' : '');
-                line += ', ';
-        }
-
+	var line = '<div id="line_'+scope.length+'" class="line">';
+	for(var entryIndex in counter)
+	{
+			var counts = counter[entryIndex];
+			line += entryIndex;
+			line += ' <a class="bracket" id="b.'+ scope.length + '.' +entryIndex+'" href="javascript:void(0);"> (' + counts['bracket'] + ')</a>';
+			line += (counts['arrow'] > 0 ? ' <a class="arrow" id="a.'+ scope.length+ '.' +entryIndex+'" href="javascript:void(0);"><' + counts['arrow'] + '></a>' : '');
+			line += (counts['square'] > 0 ? ' <a class="square" id="s.'+ scope.length+ '.' +entryIndex+'" href="javascript:void(0);">[' + counts['square'] + ']</a>' : '');
+			line += (tabContains(loc2dIndexes, entryIndex) ? ' <img title = "Afficher la carte" entry='+entryIndex+' src="/ressources/world.png" class="display_map"/> ' : '');
+			line += ', ';
+	}
+	line += '</div>';
 	return line;
 }
 
 
+// ajout d'une ligne en fonction scope
+var addLine = function()
+{
+	console.log('-----------------------------');
+	
+	var counter = new Object();
+	var tmpCollection = completeCollection.slice(0); // duplicate data
+
+	for(var collectionIndex in completeCollection)
+	{
+		tmpCollection = completeCollection[collectionIndex];
+		for(var i in scope)
+			tmpCollection = tmpCollection[scope[i]];
+		
+		for(var entryIndex in tmpCollection)
+		{
+			var entry = tmpCollection[entryIndex];
+			/*
+			if(typeof entry[0] === 'undefined')
+			{	
+				break;
+			}
+			*/
+			
+			
+			if(!counter[entryIndex])
+				counter[entryIndex] = new Object({bracket: 0, square: 0, arrow: 0});
+			
+			counter[entryIndex]['bracket']++;
+
+			if(entry != null && entry instanceof Array)
+								counter[entryIndex]['square']++;
+			else if(entry != null && typeof entry === 'object')
+                                counter[entryIndex]['arrow']++;
+		}
+	}
+
+	return buildLine(counter);
+}
+
+
+var scope = new Array();
+var completeCollection = eval(<%= $collection_content %>);
 var loc2dIndexes = new Array();
 $(document).ready(function()
 {
 	/* traitement des index2D... */
 	var indexes = eval(<%= $collection_index %>);
-	
-	console.log(<%= $collection_index %>);
-	console.log(indexes);
 
 	for(var i in indexes)
 	{
-		
 		var key = indexes[i]['key'];
 		for(var k in key)
 			if(key[k] == "2d" || key[k] == "2D")
 				loc2dIndexes.push(k);
 	}	
-	console.log(loc2dIndexes);
 
+	// first line
+	$('#collection_content').html(addLine());
+	
 
-
-
- 	var collection = eval(<%= $collection_content %>);
-	$('#collection_content').html(buildLine(collection));
 
 	/* () */
-	$('.bracket').click(function()
+	$('body').delegate('.backet', 'click',function()
 	{
-		var query = '{"' + $(this).attr('id').split('_')[1] + '": {"$exists": 1}}';
+		var query = '{"' + $(this).attr('id').split('.')[2] + '": {"$exists": 1}}';
 		$('#shell_query').val(query);
 		$('#shell_projection').val('');
 		$.ajax({
@@ -86,24 +101,32 @@ $(document).ready(function()
 		}).done(function(data) {
   			console.log(eval(data));
 		});
-
 	});
 
 	/* <> */
-	$('.arrow').click(function()
+	$('body').delegate('.arrow', 'click', function()
 	{
-		var query = '{"' + $(this).attr('id').split('_')[1] + '": {"$exists": 1}}';
-                $('#shell_query').val(query);
-		var projection = '{"' + $(this).attr('id').split('_')[1] + '":1}';
-		$('#shell_projection').val(projection);
-                $.ajax({
-                        type: "POST",
-                        url: "/ajax/execute",
-                        data: { query: query, projection: projection }
-                }).done(function(data) {
-                        var coll = eval(data);
-			var secondLine = buildLine(coll);
-                });
+		var dId_spl = $(this).attr('id').split('.');
+
+		{
+			var query = '{"' + dId_spl[2] + '": {"$exists": 1}}';
+            $('#shell_query').val(query);
+			var projection = '{"' + dId_spl[2] + '":1}';
+			$('#shell_projection').val(projection);
+		}
+		
+		// on delete les lignes qui ne sont plus utiles
+		$('div.line').each(function()
+		{
+			if($(this).attr('id').split('_')[1] > dId_spl[1])
+                        {
+                                $(this).remove();       
+                                scope.pop();
+                        }
+		});		
+        scope.push(dId_spl[2]);
+
+		$('#collection_content').append(addLine());		
 	});
 
 	
