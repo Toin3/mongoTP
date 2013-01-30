@@ -44,7 +44,7 @@ sub get_collections
 		$g_database_name = $db_name;
 		my $database = $mongo_connection->get_database($db_name);
 			my @collections = $database->collection_names;
-		@collections = grep { index($_, '.$_id_') == -1 } @collections;
+		@collections = grep { index($_, '.$') == -1 } @collections;
 		return @collections;
 	}
 }
