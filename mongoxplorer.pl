@@ -31,7 +31,15 @@ get '/databasename/:collectionname' => sub {
     my $self = shift;
     my $dbname = $self->param('collectionname');
     my @collections = MongoXplorer->get_collections($dbname);
-    $self->render('collectionlist', databasename => $dbname, collections => [@collections], title => 'Collections de la base '.$dbname);
+	if (join('', @collections) eq "database-not-found")
+	{
+		$self->flash(warning_message => "La base n'a pas été trouvé ou un problème est survenu. Merci de vous reconnecter.");
+		$self->redirect_to( '/' );
+	}
+	else
+	{
+		$self->render('collectionlist', databasename => $dbname, collections => [@collections], title => 'Collections de la base '.$dbname);
+	}
 };
 
 get '/collectiondetails/:collectionname' => sub {

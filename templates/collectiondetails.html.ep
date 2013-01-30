@@ -76,7 +76,7 @@ $(document).ready(function()
 	/* () */
 	$('.bracket').click(function()
 	{
-		var query = '{"' + $(this).attr('loc') + '": {"$exists": 1}}';
+		var query = '{"' + $(this).attr('id').split('_')[1] + '": {"$exists": 1}}';
 		$('#shell_query').val(query);
 		$('#shell_projection').val('');
 		$.ajax({
