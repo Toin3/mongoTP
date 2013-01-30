@@ -1,5 +1,14 @@
 % layout 'default';
 <script>
+Array.prototype.contains = function(val)
+{
+	for(var i in this)
+		if(this[i] == val)
+			return true;
+	return false;
+}
+
+
 var buildLine = function(collection)
 {
 	var counter = new Object();
@@ -31,6 +40,7 @@ var buildLine = function(collection)
                 line += entryIndex;
                 line += ' <a class="bracket" id="b_'+entryIndex+'" href="javascript:void(0);"> (' + counts['bracket'] + ')</a>';
                 line += (counts['arrow'] > 0 ? ' <a class="arrow" id="a_'+entryIndex+'" href="javascript:void(0);"><' + counts['arrow'] + '></a>' : '');
+		line += (loc2dIndexes.contains(entryIndex) ? ' X ' : '');
                 line += ', ';
         }
 
@@ -38,10 +48,28 @@ var buildLine = function(collection)
 }
 
 
-
-
+var loc2dIndexes = new Array();
 $(document).ready(function()
 {
+	/* traitement des index2D... */
+	var indexes = eval(<%= $collection_index %>);
+	
+	console.log(<%= $collection_index %>);
+	console.log(indexes);
+
+	for(var i in indexes)
+	{
+		
+		var key = indexes[i]['key'];
+		for(var k in key)
+			if(key[k] == "2D")
+				loc2dIndexes.push(k);
+	}	
+	console.log(loc2dIndexes);
+
+
+
+
  	var collection = eval(<%= $collection_content %>);
 	$('#collection_content').html(buildLine(collection));
 
@@ -50,6 +78,7 @@ $(document).ready(function()
 	{
 		var query = '{"' + $(this).attr('id').split('_')[1] + '": {"$exists": 1}}';
 		$('#shell_query').val(query);
+		$('#shell_projection').val('');
 		$.ajax({
   			type: "POST",
   			url: "/ajax/execute",
