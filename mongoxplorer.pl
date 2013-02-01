@@ -54,8 +54,21 @@ get '/collectiondetails/:collectionname' => sub {
 post '/ajax/execute' => sub {
 	my $self = shift;
 	my $data = MongoXplorer->execute_query($self->param('query'), $self->param('projection'));
-	
+	$self->app->log->debug(Dumper($data));
 	$self->render(json => $data);
+};
+
+post '/ajax/gmap' => sub {
+	my $self = shift;
+	my $data = MongoXplorer->execute_gmap($self->param('latitude'), $self->param('longitude'));
+	#$self->app->log->debug(Dumper($data));
+	$self->render(json => $data);
+};
+
+post '/ajax/test' => sub {
+	my $self = shift;
+	
+	$self->render(json => {"message"=>"TEST"});
 };
 
 app->start;

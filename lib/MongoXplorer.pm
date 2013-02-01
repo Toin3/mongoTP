@@ -10,10 +10,10 @@ use Data::Dumper;
 use JSON;
 use Mojo::JSON;
 
-my $g_instance_name;
-my $g_instance_port;
-my $g_database_name;
-my $g_collection_name;
+my $g_instance_name = "localhost";
+my $g_instance_port = "27017";
+my $g_database_name = "dbtp";
+my $g_collection_name = "cities";
 
 sub get_databases {
 	my $self = shift;
@@ -111,5 +111,29 @@ sub execute_query
 		return $formated_json;
 	}
 }
+
+sub execute_gmap
+{
+	my $self = shift;
+ 	my ( $latitude, $longitude) = @_;
+	my $mongo_connection = MongoDB::MongoClient->new(host => $g_instance_name.':'.$g_instance_port);
+	my $db = $mongo_connection->get_database( $g_database_name );
+	my $data;
+	my $rv = eval { $data = $db->get_collection($g_collection_name)->find({"loc" => {'$near' => [$latitude, $longitude]}})->limit(1)};
+	if ($@) {
+		return "bad-query";
+	} else
+	{
+		print Dumper($data->all);
+		my @arr_data;
+		while (my $record = $data->next)
+		{
+			push(@arr_data, to_json($record,{allow_blessed=>1,convert_blessed=>1, utf8=>1}));
+		}
+		my $formated_json = '['.join(',', @arr_data).']';
+		return $formated_json;
+	}
+}
+
 
 1;

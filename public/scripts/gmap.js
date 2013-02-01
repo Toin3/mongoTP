@@ -22,36 +22,41 @@ window.onload = function()
 				data: { query: queryloc, projection: '' }
 			}).done(function(data) {
 				markers_data = eval(data);
-				console.log(markers_data);
-				$.each(markers_data,function(k1, v1 )
-				{
-					markers[k1] = new google.maps.Marker({
-						position: new google.maps.LatLng(v1['loc']['lat'], v1['loc']['long']),
-						map: map,
-						icon:'/ressources/marker.png',
-						title:v1['_id']['$oid']
-					});
-				});
-
+				build_marker(markers_data);
 				$('#map_aera').show();
 				google.maps.event.trigger(map, 'resize');
 			});
 		});
 		
 		google.maps.event.addListener(map, 'click', function(event) {
-			var tempArray = new Array();
-			//var test = google.maps.geometry.spherical.computeDistanceBetween(markers[0].getPosition(), new google.maps.LatLng(event.latLng.lat(),event.latLng.lng() ));
-			//console.log(markers_data);
-			$.each(markers_data,function(k1, v1 )
-			{
-				var temp_dist = google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(v1['loc']['lat'], v1['loc']['long']), new google.maps.LatLng(event.latLng.lat(),event.latLng.lng() ));
-				tempArray.push([[v1['_id']['$oid']], parseInt(temp_dist.toFixed(0))]);
+			$.ajax({
+				type: "POST",
+				url: "/ajax/gmap",
+				data: { latitude: event.latLng.lat(), longitude: event.latLng.lng() }
+			}).done(function(data) {
+				console.log(eval(data));
+				build_marker(eval(data));
 			});
-			tempArray = (tempArray.sort(function(a, b) {return a[1] - b[1]})).slice(0,5);
-			console.log(tempArray);
-			// Syntaxe select where in : {"yahoo.woetype" : { "$in" : [11, 7]}} pour l'id : {"_id" : { "$in" : ["4f520122ecf6171327000137", "4f4f49c09d1bd90728000034"]}} -----> ne fonctionne pas
-			
 		});
+		
+		
+		function build_marker(data){			
+			$.each(markers,function(k, v )
+			{
+				 markers[k].setMap(null);
+			});
+			markers = new Object();
+			
+			$.each(data,function(k1, v1 )
+			{
+				markers[k1] = new google.maps.Marker({
+					position: new google.maps.LatLng(v1['loc']['lat'], v1['loc']['long']),
+					map: map,
+					icon:'/ressources/marker.png',
+					title:v1['_id']['$oid']
+				});
+			});
+		}
 		
 	});
 
